@@ -10,7 +10,7 @@ Carga de la librería usando el módulo AMD.
 <img width="200px" height="200px" src="http://91.121.152.137/images/imagenCircleMap.png" />&nbsp;
 
 ###Ejemplos
-[Ver demostración](http://91.121.152.137/apps/circlemap/index.html).
+[Ver demostración](http://saik003.github.io/Circular-Map-ArcGIS/).
 
 [Aquí](https://github.com/saik003/Circular-Map-ArcGIS) el código para descargar.  
 
