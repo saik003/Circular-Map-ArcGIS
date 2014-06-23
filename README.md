@@ -12,7 +12,7 @@ Carga de la librería usando el módulo AMD.
 ###Ejemplos
 [Ver demostración](http://91.121.152.137/apps/circlemap/index.html).
 
-[Aquí](https://github.com/saik003/Apps-JavaScript/tree/master/CircleMap) el código para descargar.  
+[Aquí](https://github.com/saik003/Circular-Map-ArcGIS) el código para descargar.  
 
 ###Versiones del API de ESRI soportadas
 Probado en versiones: 3.9
