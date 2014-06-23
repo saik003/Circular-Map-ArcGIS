@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Cicular Div</title>
+	<style type="text/css">
+		html, body {
+		    margin: 0;
+		    padding: 0;
+		    width: 100%;
+		    height: 90%;
+		    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+			
+
+		}
+		#container {
+			position: relative;
+		    width: 500px;
+		    height: 500px;
+		    margin: 0 auto;
+		}
+
+
+		/* @link http://stackoverflow.com/questions/8286550/anti-or-inverted-circle-using-only-css */
+		.underneath {
+		    z-index: 1;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    padding: 0;
+		    margin: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+
+		.overlay {
+		    z-index: 10;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    width: 100%;
+		    height: 100%;
+		    background: -moz-radial-gradient(
+		        transparent 70%,
+		        rgba(49, 49, 49, 1) 70%
+		        );
+		    background: -webkit-radial-gradient(
+		        transparent 70%, 
+		        rgba(49, 49, 49, 1) 70%
+		        );
+		    background: -ms-radial-gradient(
+		        transparent 70%,
+		        rgba(49, 49, 49, 1) 70%
+		        );
+		    background: -o-radial-gradient(
+		        transparent 100%,
+		        rgba(49, 49, 49, 1) 70%
+		        );
+		    pointer-events: none; /* send mouse events beneath this layer */
+		}
+		h1 {
+		    font-size: 24px;
+		    color: limegreen;
+		}
+		html, body {
+		    background: #313131;
+		}
+		#titulo{
+			color: white;	
+			text-align: center;	
+		}
+		
+
+		
+	</style>
+	 <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+	   <script src="http://js.arcgis.com/3.9/"></script>
+    <script>
+      var map;
+
+      require(["esri/map", "dojo/domReady!"], function(Map) {
+        map = new Map("map", {
+          basemap: "topo",
+          center: [-122.45, 37.75], // longitude, latitude
+          zoom: 13,
+        });
+      
+        map.on("load",function(){
+        	document.getElementsByClassName("esriAttribution")[0].style.display="none";
+        	document.getElementById("map_zoom_slider").style.display="none";
+        });
+
+        
+
+      });
+    </script>
+</head>
+<body link="#ffffcc" vlink="#ffffcc">
+	<div><p id="titulo">Mapa ArcGIS en DIV Circular </p></div>
+	<div id="container">
+    	<div id="map-container" class="overlay"></div>
+    	<div id="map" class="underneath"></div>
+	</div>
+	<div><p id="titulo">Realizado por: <a href="http://www.carlosguerrerolopez.com"> Carlos Guerrero López</a></p></div>
+	<div><p id="titulo">Todo el código en mi <a href="https://github.com/saik003/Apps-JavaScript/tree/master/CircleMap">GitHub</a></p></div>
+</body>
+</html>
