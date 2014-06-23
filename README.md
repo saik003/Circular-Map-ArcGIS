@@ -12,13 +12,13 @@ Carga de la librería usando el módulo AMD.
 ### Ejemplo:
 [Ver demostración](http://saik003.github.io/Circular-Map-ArcGIS/).
 
-###Código:
+### Código:
 
 [Aquí](https://github.com/saik003/Circular-Map-ArcGIS) el código para descargar.  
 
-###APIs usadas:
+### APIs usadas:
 
 * API ArcGIS JavaScript
  
-####Versiones del API de ArcGIS soportadas:
+#### Versiones del API de ArcGIS soportadas:
 * Versión - 3.9 
